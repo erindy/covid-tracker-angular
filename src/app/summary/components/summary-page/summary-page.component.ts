@@ -18,7 +18,6 @@ export class SummaryPageComponent {
     this.dataService.getSummaryData().subscribe(
       (data: any) => {
         this.covidData = data;
-        console.log('Summary Data', this.covidData);
       }
     ) ;
   }
