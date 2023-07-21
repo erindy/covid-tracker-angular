@@ -19,7 +19,9 @@ export class DataService {
 
 function createCovidDataObject() {
 
-  const countries = ["Brazil", "Albania", "USA", "India", "Russia", "China", "Italy", "Germany", "France", "Spain", "Australia"];
+  const countries = ["Brazil", "Albania", "USA", "India", "Russia", "China", "Netherlands",
+   "Italy", "Germany", "France", "Spain", "Australia", "Belgium", "Switzerland", "Malta", "Japan",
+  "Argentina", "Poland", "Russia"];
   const covidDataObjects = [];
   for (let i = 0; i < 10; i++) {
     const randomCovidData = createRandomCovidDataObject(countries);
