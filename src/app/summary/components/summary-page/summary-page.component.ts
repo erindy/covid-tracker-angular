@@ -9,6 +9,7 @@ import { DataService } from 'src/app/shared/services/data.service';
 export class SummaryPageComponent {
 
   covidData: any = {};
+  countryToSearch: string = '';
 
   constructor(private dataService: DataService) {
 
@@ -20,6 +21,10 @@ export class SummaryPageComponent {
         this.covidData = data;
       }
     ) ;
+  }
+
+  searchCountry(searchTerm: string) {
+    this.countryToSearch = searchTerm;
   }
 
 }
